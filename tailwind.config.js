@@ -13,6 +13,8 @@ module.exports = {
         "custom-black": "hsla(0, 0%, 11%, 1)",
         "text-light": "hsla(0, 0%, 11%, 0.7)",
         light: "hsla(43, 100%, 96%, 1)",
+        "dark-light": "hsla(43, 100%, 86%, 1)",
+        "bright-light": "hsla(43, 100%, 100%, 0.9)",
         orange: "#FFAC4B",
         "custom-white": "#E5E5E5",
         "custom-gray": "hsla(0, 0%, 95%, 1)",
@@ -22,8 +24,12 @@ module.exports = {
       },
       spacing: {
         navHeight: "5rem",
+        littleNavHeight: "4.4rem",
         wrapper: "2.4rem",
         bigWrapper: "8rem",
+      },
+      backgroundImage: {
+        discountBackground: "url('/backGround-Discount.png')",
       },
     },
   },

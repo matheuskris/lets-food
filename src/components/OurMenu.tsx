@@ -29,7 +29,7 @@ const dishes = [
 
 export default function OurMenu() {
   return (
-    <div className=" flex flex-col items-center px-wrapper py-20">
+    <div className="flex flex-col items-center px-wrapper py-20">
       <div className="flex flex-col items-center max-w-sm">
         <h4 className="text-primary text-2xl font-medium ">Our Menu</h4>
         <h3 className="text-custom-black text-3xl font-bold">
@@ -40,11 +40,12 @@ export default function OurMenu() {
           alias ad iure consectetur ea
         </p>
       </div>
-      <div className="mt-4 flex flex-col gap-4 lg:flex-row">
+      <div className="mt-4 flex flex-col gap-7 lg:flex-row">
         {dishes.map((dishe, i) => {
           return <CardDishe key={i} dishe={dishe} />;
         })}
       </div>
+      <button className="btn mt-10">More Menu</button>
     </div>
   );
 }

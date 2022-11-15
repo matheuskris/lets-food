@@ -1,8 +1,8 @@
-type NavProps = {
-  colorButton: string;
-};
+// type NavProps = {
+//   colorButton: string;
+// };
 
-export default function NavMenu({ colorButton }: NavProps) {
+export default function NavMenu() {
   return (
     <>
       <div className="hidden xxg:flex">
@@ -21,7 +21,7 @@ export default function NavMenu({ colorButton }: NavProps) {
         <div>
           <img src="/cart-icon.svg" alt="ícone carrinho" />
         </div>
-        <button className={`${colorButton} btn flex flex-row gap-2`}>
+        <button className={` btn flex flex-row gap-2`}>
           <img src="/sign-in-icon.svg" alt="icone entrar" />
           Sign in
         </button>

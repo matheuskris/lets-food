@@ -2,10 +2,14 @@ import { useEffect, useState } from "react";
 import NavMenu from "../pieces/NavMenu";
 
 export default function Navigation() {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const bgNav = scrolled ? "bg-orange" : "bg-light";
-  const stylesMovedButton = scrolled ? "bg-custom-black text-white" : "";
+  const stylesNav = scrolled
+    ? "h-littleNavHeight shadow-dark-light shadow-xl"
+    : "h-navHeight";
+
+  const navOpenProps = "";
 
   function getScroll() {
     if (window.scrollY > 0) {
@@ -23,15 +27,15 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed  flex flex-row justify-between h-navHeight w-full px-wrapper lg:px-bigWrapper ${bgNav}`}
+      className={`fixed bg-light z-20 flex flex-row justify-between transition-all w-full px-wrapper lg:px-bigWrapper ${stylesNav}`}
     >
       <div className="flex place-items-center">
-        <img src="logo.svg" width={167} height={47} alt="logo da loja" />
+        <img src="/logo.svg" width={167} height={47} alt="logo da loja" />
       </div>
       <div className="flex place-items-center lg:hidden">
         <img src="/openMenu.svg" alt="Abrir menu" />
       </div>
-      <NavMenu colorButton={stylesMovedButton} />
+      <NavMenu />
     </nav>
   );
 }
