@@ -1,8 +1,8 @@
 export default function Banner() {
   return (
     <div className="pt-navHeight">
-      <div className="bg-light px-wrapper flex flex-col justify-between lg:flex-row lg:px-bigWrapper">
-        <div className="md:w-[30rem]">
+      <div className="bg-light px-wrapper flex flex-col justify-between lg:flex-row lg:px-bigWrapper w-full">
+        <div className="w-full md:w-screen">
           <h1 className="text-5xl font-readex pt-[160px] leading-[60px] font-semibold">
             Be The Fastest In Deliver Your{" "}
             <span className="text-primary">Food</span>
@@ -19,8 +19,8 @@ export default function Banner() {
             <img src="/banner-wave.svg" alt="desenho abstrato de ondinhas" />
           </div>
         </div>
-        <div className="relative">
-          <div className="ml-8">
+        <div className="relative w-[50%]">
+          <div className="w-full h-[70%] ml-8">
             <img
               src="/banner-dishes.png"
               alt="3 pratos de comida bem saborosos"

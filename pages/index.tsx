@@ -8,7 +8,7 @@ import Footer from "../src/components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full">
       <Navigation />
       <Banner />
       <HowSection />

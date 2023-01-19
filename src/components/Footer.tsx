@@ -41,13 +41,13 @@ export default function Footer() {
         </div>
         <div className="flex flex-col">
           <h4 className="font-medium text-xl">Get in Touch</h4>
-          <span className="text-text-light text-xl">(71) 999283838</span>
+          <span className="text-text-light text-xl">999283838</span>
           <span className="text-text-light text-xl">food@example.com</span>
         </div>
       </div>
       <div className="h-0 w-[70%] mx-auto border-solid border border-custom-gray" />
       <div className="py-10 flex justify-center items-center">
-        © 2022 Let'sFood. ALL RIGHT RESERVED.
+        &copy;2023 Let'sFood. ALL RIGHT RESERVED.
       </div>
     </div>
   );
