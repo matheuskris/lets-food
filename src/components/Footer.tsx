@@ -47,7 +47,7 @@ export default function Footer() {
       </div>
       <div className="h-0 w-[70%] mx-auto border-solid border border-custom-gray" />
       <div className="py-10 flex justify-center items-center">
-        &copy;2023 Let'sFood. ALL RIGHT RESERVED.
+        &copy;2023 Let&apos;sFood. ALL RIGHT RESERVED.
       </div>
     </div>
   );
